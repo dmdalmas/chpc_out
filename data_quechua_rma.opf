@@ -1,0 +1,25 @@
+######################################################
+# resid: print site pattern frequencies or residuals #
+#                   version 2.3.5                    #
+######################################################
+#
+# Program was compiled: Dec  7 2021 11:56:16
+# Program was run: Mon Mar 21 13:13:31 2022
+# deleting a
+# Printing relative frequencies
+SitePat     data_quechua
+x           0.1597198550
+y           0.1563604032
+v           0.1687585254
+d           0.1741675202
+x:y         0.0973174987
+x:v         0.0128638319
+x:d         0.0124968453
+y:v         0.0158501402
+y:d         0.0121431213
+v:d         0.0738552157
+x:y:v       0.0338935178
+x:y:d       0.0280532643
+x:v:d       0.0247340800
+y:v:d       0.0270918234
+x:y:v:d     0.0026943576
