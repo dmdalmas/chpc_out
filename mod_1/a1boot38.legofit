@@ -1,0 +1,92 @@
+########################################
+# legofit: estimate population history #
+#            version 2.3.5             #
+########################################
+#
+# Program was compiled: Dec  7 2021 11:56:14
+# Program was run: Mon Feb 28 21:31:42 2022
+#
+# cmd: legofit -1 -d 0 --tol 3e-6 -S 5000 --stateOut a1boot38.state a.lgo ../boot/boot38.opf
+# curr dir: /uufs/chpc.utah.edu/common/home/rogersa-group2/dalmas/legofit/mod_1
+# Stage nOptItr nSimReps
+#     0    5000        0
+# algorithm          : deterministic
+# ignoring probs <=  : 0
+# Branch length floor: 0
+# DE strategy        : 2
+#    F               : 0.3
+#    CR              : 0.8
+#    tolerance       : 3e-06
+# nthreads           : 16
+# lgo input file     : a.lgo
+# site pat input file: ../boot/boot38.opf
+# free parameters    : 12
+# points in DE swarm : 120
+# output state file  : a1boot38.state
+# Including singleton site patterns.
+# cost function      : KL
+Initial parameter values
+Fixed:
+      zero = 0
+       one = 1
+       TmN = 1
+     Txynd = 25920
+Free:
+       Tnd = 24000
+       Tav = 14000
+       Txy = 3788
+        Td = 2500
+        Ta = 4000
+        Tv = 1000
+    twoNav = 2000
+     twoNn = 2000
+    twoNnd = 2000
+    twoNxy = 20000
+  twoNxynd = 20000
+        mN = 0.01
+DiffEv reached_goal. cost=4.24914e-04 spread=2.93912e-06
+Fitted parameter values
+Free:
+       Tnd = 24544.4
+       Tav = 13591.3
+       Txy = 7825.07
+        Td = 2859.32
+        Ta = 5868.18
+        Tv = 3261.64
+    twoNav = 18888.2
+     twoNn = 6555.23
+    twoNnd = 3650.36
+    twoNxy = 34956.3
+  twoNxynd = 42720.8
+        mN = 0.0266831
+#       SitePat  BranchLen
+              x 36324.1958230
+              y 35032.1970029
+              v 11528.2461189
+              a 9015.6895265
+              d 38430.5761137
+            x:y 21705.2930064
+            x:v 274.7728107
+            x:a 282.1441651
+            x:d 2842.7130252
+            y:v 424.3265145
+            y:a 330.3440753
+            y:d 2623.8060616
+            v:a 26711.2352697
+            v:d 1070.9987164
+            a:d 1082.5152274
+          x:y:v 567.2438078
+          x:y:a 559.8724533
+          x:y:d 6084.6095938
+          x:v:a 2573.5393145
+          x:v:d 228.7116283
+          x:a:d 236.0829828
+          y:v:a 3303.7655843
+          y:v:d 244.5117091
+          y:a:d 232.9951981
+          v:a:d 16313.0636459
+        x:y:v:a 6353.7833045
+        x:y:v:d 613.3049902
+        x:y:a:d 605.9336357
+        x:v:a:d 5212.8454141
+        y:v:a:d 5783.0590178

@@ -1,0 +1,92 @@
+########################################
+# legofit: estimate population history #
+#            version 2.3.5             #
+########################################
+#
+# Program was compiled: Dec  7 2021 11:56:14
+# Program was run: Mon Feb 28 21:31:13 2022
+#
+# cmd: legofit -1 -d 0 --tol 3e-6 -S 5000 --stateOut a1boot25.state a.lgo ../boot/boot25.opf
+# curr dir: /uufs/chpc.utah.edu/common/home/rogersa-group2/dalmas/legofit/mod_1
+# Stage nOptItr nSimReps
+#     0    5000        0
+# algorithm          : deterministic
+# ignoring probs <=  : 0
+# Branch length floor: 0
+# DE strategy        : 2
+#    F               : 0.3
+#    CR              : 0.8
+#    tolerance       : 3e-06
+# nthreads           : 16
+# lgo input file     : a.lgo
+# site pat input file: ../boot/boot25.opf
+# free parameters    : 12
+# points in DE swarm : 120
+# output state file  : a1boot25.state
+# Including singleton site patterns.
+# cost function      : KL
+Initial parameter values
+Fixed:
+      zero = 0
+       one = 1
+       TmN = 1
+     Txynd = 25920
+Free:
+       Tnd = 24000
+       Tav = 14000
+       Txy = 3788
+        Td = 2500
+        Ta = 4000
+        Tv = 1000
+    twoNav = 2000
+     twoNn = 2000
+    twoNnd = 2000
+    twoNxy = 20000
+  twoNxynd = 20000
+        mN = 0.01
+DiffEv reached_goal. cost=5.10100e-04 spread=2.89852e-06
+Fitted parameter values
+Free:
+       Tnd = 25616.5
+       Tav = 12778.7
+       Txy = 7889.3
+        Td = 2836.43
+        Ta = 6020.13
+        Tv = 3296.57
+    twoNav = 20213.4
+     twoNn = 6091.33
+    twoNnd = 800.71
+    twoNxy = 34959.1
+  twoNxynd = 43074.6
+        mN = 0.0264709
+#       SitePat  BranchLen
+              x 36492.5317491
+              y 35199.6425923
+              v 11659.8952378
+              a 9039.7580024
+              d 38727.2848606
+            x:y 21814.9756906
+            x:v 280.2067384
+            x:a 288.4004720
+            x:d 2860.4523400
+            y:v 437.1256497
+            y:a 333.7072311
+            y:d 2641.4146377
+            v:a 26812.2845600
+            v:d 1071.1288247
+            a:d 1083.7363790
+          x:y:v 578.3488473
+          x:y:a 570.1551137
+          x:y:d 6109.5217488
+          x:v:a 2590.6872766
+          x:v:d 233.3520236
+          x:a:d 241.5457572
+          y:v:a 3320.2903986
+          y:v:d 249.9156108
+          y:a:d 237.3080566
+          v:a:d 16309.2460093
+        x:y:v:a 6379.2868122
+        x:y:v:d 625.2035621
+        x:y:a:d 617.0098286
+        x:v:a:d 5270.3603578
+        y:v:a:d 5838.1325379

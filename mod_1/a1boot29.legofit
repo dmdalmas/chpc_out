@@ -1,0 +1,92 @@
+########################################
+# legofit: estimate population history #
+#            version 2.3.5             #
+########################################
+#
+# Program was compiled: Dec  7 2021 11:56:14
+# Program was run: Mon Feb 28 21:31:24 2022
+#
+# cmd: legofit -1 -d 0 --tol 3e-6 -S 5000 --stateOut a1boot29.state a.lgo ../boot/boot29.opf
+# curr dir: /uufs/chpc.utah.edu/common/home/rogersa-group2/dalmas/legofit/mod_1
+# Stage nOptItr nSimReps
+#     0    5000        0
+# algorithm          : deterministic
+# ignoring probs <=  : 0
+# Branch length floor: 0
+# DE strategy        : 2
+#    F               : 0.3
+#    CR              : 0.8
+#    tolerance       : 3e-06
+# nthreads           : 16
+# lgo input file     : a.lgo
+# site pat input file: ../boot/boot29.opf
+# free parameters    : 12
+# points in DE swarm : 120
+# output state file  : a1boot29.state
+# Including singleton site patterns.
+# cost function      : KL
+Initial parameter values
+Fixed:
+      zero = 0
+       one = 1
+       TmN = 1
+     Txynd = 25920
+Free:
+       Tnd = 24000
+       Tav = 14000
+       Txy = 3788
+        Td = 2500
+        Ta = 4000
+        Tv = 1000
+    twoNav = 2000
+     twoNn = 2000
+    twoNnd = 2000
+    twoNxy = 20000
+  twoNxynd = 20000
+        mN = 0.01
+DiffEv reached_goal. cost=4.05059e-04 spread=2.80139e-06
+Fitted parameter values
+Free:
+       Tnd = 25869.4
+       Tav = 13733.8
+       Txy = 8625.47
+        Td = 2942.71
+        Ta = 5983.57
+        Tv = 3163.45
+    twoNav = 23285
+     twoNn = 6287.57
+    twoNnd = 135.148
+    twoNxy = 33301.2
+  twoNxynd = 42958.3
+        mN = 0.0249976
+#       SitePat  BranchLen
+              x 36495.2296120
+              y 35275.7837696
+              v 11720.7399501
+              a 8998.5611626
+              d 38718.1656182
+            x:y 21683.4862026
+            x:v 277.4230603
+            x:a 285.1238975
+            x:d 2850.1700827
+            y:v 425.2406843
+            y:a 327.2939237
+            y:d 2642.4820041
+            v:a 27010.6209094
+            v:d 1056.6536854
+            a:d 1068.4228278
+          x:y:v 574.9233950
+          x:y:a 567.2225578
+          x:y:d 6144.6793956
+          x:v:a 2592.0841541
+          x:v:d 230.5807976
+          x:a:d 238.2816347
+          y:v:a 3285.9482896
+          y:v:d 245.9821909
+          y:a:d 234.2130486
+          v:a:d 16204.6643251
+        x:y:v:a 6402.7653242
+        x:y:v:d 621.7656577
+        x:y:a:d 614.0648206
+        x:v:a:d 5233.0109875
+        y:v:a:d 5764.9603156

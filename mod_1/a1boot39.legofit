@@ -1,0 +1,92 @@
+########################################
+# legofit: estimate population history #
+#            version 2.3.5             #
+########################################
+#
+# Program was compiled: Dec  7 2021 11:56:14
+# Program was run: Mon Feb 28 21:31:42 2022
+#
+# cmd: legofit -1 -d 0 --tol 3e-6 -S 5000 --stateOut a1boot39.state a.lgo ../boot/boot39.opf
+# curr dir: /uufs/chpc.utah.edu/common/home/rogersa-group2/dalmas/legofit/mod_1
+# Stage nOptItr nSimReps
+#     0    5000        0
+# algorithm          : deterministic
+# ignoring probs <=  : 0
+# Branch length floor: 0
+# DE strategy        : 2
+#    F               : 0.3
+#    CR              : 0.8
+#    tolerance       : 3e-06
+# nthreads           : 16
+# lgo input file     : a.lgo
+# site pat input file: ../boot/boot39.opf
+# free parameters    : 12
+# points in DE swarm : 120
+# output state file  : a1boot39.state
+# Including singleton site patterns.
+# cost function      : KL
+Initial parameter values
+Fixed:
+      zero = 0
+       one = 1
+       TmN = 1
+     Txynd = 25920
+Free:
+       Tnd = 24000
+       Tav = 14000
+       Txy = 3788
+        Td = 2500
+        Ta = 4000
+        Tv = 1000
+    twoNav = 2000
+     twoNn = 2000
+    twoNnd = 2000
+    twoNxy = 20000
+  twoNxynd = 20000
+        mN = 0.01
+DiffEv reached_goal. cost=3.85906e-04 spread=2.91188e-06
+Fitted parameter values
+Free:
+       Tnd = 25875.6
+       Tav = 11651.5
+       Txy = 9576.88
+        Td = 2859.45
+        Ta = 5807.21
+        Tv = 3097.06
+    twoNav = 18515.3
+     twoNn = 5848.62
+    twoNnd = 117.694
+    twoNxy = 31202.9
+  twoNxynd = 43607.7
+        mN = 0.023552
+#       SitePat  BranchLen
+              x 36812.5445076
+              y 35646.1496485
+              v 11748.7184354
+              a 9133.9203562
+              d 39012.4549889
+            x:y 21899.1751599
+            x:v 275.5004943
+            x:a 282.9318465
+            x:d 2867.0908842
+            y:v 418.6254928
+            y:a 323.2782040
+            y:d 2668.3503307
+            v:a 27300.0141722
+            v:d 1058.7427207
+            a:d 1070.1205568
+          x:y:v 575.3337468
+          x:y:a 567.9023946
+          x:y:d 6247.2521781
+          x:v:a 2618.7110986
+          x:v:d 229.1739778
+          x:a:d 236.6053300
+          y:v:a 3278.5104304
+          y:v:d 243.9344048
+          y:a:d 232.5565687
+          v:a:d 16562.5193439
+        x:y:v:a 6495.6319636
+        x:y:v:d 621.6602634
+        x:y:a:d 614.2289111
+        x:v:a:d 5308.4513635
+        y:v:a:d 5819.6044226

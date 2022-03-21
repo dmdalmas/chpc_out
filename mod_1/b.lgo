@@ -1,0 +1,119 @@
+# (grep ^# a.lgo; pclgo --tol 0.001 a.lgo a2.legofit a2boot*.legofit; grep -v ^# a.lgo | egrep -v "\<free\>")
+# Gene flow: N->Y
+# XY = early modern; Y = Quechua; N=Neanderthal; D=Denisovan
+# Altai and Vindija on same branch
+# TmN < Tv < Ta
+# Neanderthal population size allowed to change
+# PCA calculated with gsl_linalg_SV_decomp
+# Fraction of variance:
+#      pc1      pc2      pc3      pc4      pc5      pc6      pc7      pc8
+#  0.26722  0.20464  0.16717  0.15630  0.07779  0.06360  0.03958  0.01376
+#      pc9     pc10     pc11     pc12
+#  0.00792  0.00170  0.00032  0.00002
+param free [    -4,      4] pc1 = 0
+param free [    -2,      2] pc2 = 0
+param free [    -4,      4] pc3 = 0
+param free [    -4,      4] pc4 = 0
+param free [    -2,      2] pc5 = 0
+param free [    -2,      2] pc6 = 0
+param free [    -2,      2] pc7 = 0
+param free [    -2,      2] pc8 = 0
+param free [    -1,      1] pc9 = 0
+param free [    -1,      1] pc10 = 0
+time constrained Tnd = 25886.35882352941 - 3.80214927519609*pc1 +
+    0.4288613956234021*pc2 + 8.177771784279098*pc3 +
+    9.278767195889884*pc4 - 1.009999308159547*pc5 -
+    0.4399737654427104*pc6 + 1.69692293217612*pc7 -
+    0.06830317177404734*pc8 + 0.8311014021450893*pc9 -
+    0.3162599427051311*pc10
+time constrained Tav = 11117.69 + 384.4548785273095*pc1 -
+    291.8772353322237*pc2 + 176.2066893976177*pc3 -
+    1.693170898909483*pc4 - 93.38835426283518*pc5 -
+    37.50846414453133*pc6 + 36.33057475566346*pc7 +
+    133.2971705461637*pc8 + 89.81179022384505*pc9 -
+    70.04541752770561*pc10
+time constrained Txy = 8400.733725490196 + 111.5698790167758*pc1 +
+    153.2091498790327*pc2 + 1.75322443312463*pc3 +
+    16.35755002709051*pc4 - 16.42436712128469*pc5 +
+    22.24060954504451*pc6 + 132.7449555999523*pc7 +
+    5.203469769711174*pc8 - 17.91470258953565*pc9 +
+    229.9212494115858*pc10
+time constrained Td = 2900.456862745099 - 15.30336584839414*pc1 -
+    11.68203947275105*pc2 + 6.322909710752021*pc3 -
+    15.09128354401605*pc4 - 30.78294278267977*pc5 +
+    57.25112313604816*pc6 + 13.57957101079549*pc7 +
+    0.2242404745730039*pc8 + 4.419752982713494*pc9 +
+    1.024545686263427*pc10
+time constrained Ta = 6064.446078431372 - 0.4041947055028498*pc1 +
+    10.41131543386907*pc2 + 37.91511369906742*pc3 -
+    38.32534458344521*pc4 + 6.147493524858249*pc5 -
+    12.347687559731*pc6 - 3.848998859152826*pc7 -
+    9.242437830893875*pc8 + 54.16024157796939*pc9 +
+    4.802379356275884*pc10
+time constrained Tv = 3306.885490196079 - 8.273205781562888*pc1 +
+    8.739412050268733*pc2 + 47.81615119638712*pc3 -
+    38.79063158945237*pc4 + 8.96141560683018*pc5 -
+    5.284248397581101*pc6 - 3.111407536422613*pc7 -
+    5.623308024658674*pc8 - 64.71246535862502*pc9 -
+    1.931667061876055*pc10
+twoN constrained twoNav = 18201.2 + 486.0543776151337*pc1 -
+    566.694981679793*pc2 + 94.32617817079567*pc3 +
+    125.8223461963062*pc4 - 31.36212435297978*pc5 +
+    17.4620195893522*pc6 + 41.27544962618656*pc7 -
+    1025.293470681787*pc8 - 99.95855005279306*pc9 +
+    146.6731400618315*pc10
+twoN constrained twoNn = 5337.682941176468 + 170.139442596249*pc1 -
+    106.0673239297291*pc2 + 76.04242916621753*pc3 +
+    0.89289478026115*pc4 - 61.26826911623133*pc5 -
+    21.16271552374649*pc6 + 17.41920246590305*pc7 +
+    216.3247889054391*pc8 - 28.05625329742283*pc9 -
+    13.95329175167053*pc10
+twoN constrained twoNnd = 89.89097450980393 + 10.22498354761663*pc1 -
+    1.178111468066616*pc2 - 21.61745564209526*pc3 -
+    24.53776924500202*pc4 + 2.669038294162457*pc5 +
+    1.05777749383557*pc6 - 4.910982095484644*pc7 +
+    0.5868747175431785*pc8 - 2.269712380163016*pc9 -
+    0.1312810343757661*pc10
+twoN constrained twoNxy = 33819.41568627451 - 284.947633101345*pc1 -
+    390.1040323239453*pc2 - 6.612291879826526*pc3 -
+    25.8721770967236*pc4 + 8.394982719301995*pc5 -
+    93.8033222377727*pc6 - 310.8547308443484*pc7 +
+    132.8239151897531*pc8 - 6.425686776066248*pc9 +
+    582.0295712479104*pc10
+twoN constrained twoNxynd = 43179.69607843136 +
+    42.02838732173413*pc1 + 82.579311164587*pc2 +
+    8.949997286154247*pc3 + 18.79228373857326*pc4 -
+    146.838865179293*pc5 - 10.00397842907145*pc6 -
+    152.3377972598718*pc7 - 24.28546051510503*pc8 -
+    8.698453834336506*pc9 + 1.246254090224551*pc10
+mixFrac constrained mN = 0.02474822352941177 + 0.0002862005807902518*pc1 +
+    0.0001311707571562421*pc2 + 0.0001435173847567991*pc3 +
+    0.0001786120547773971*pc4 + 0.0006541587616721202*pc5 +
+    0.0006016061958143554*pc6 - 0.0005030578783567865*pc7 +
+    7.278494060311304e-05*pc8 + 3.746109390324142e-05*pc9 +
+    4.082878406624422e-05*pc10
+time fixed  zero = 0
+twoN fixed  one = 1
+time fixed  TmN = 1        # no coalesc. events can happen b/t 0 and Tv
+time fixed  Txynd = 25920  # \citet[table~S12.2, p.~90]{Li:N-505-43-S88}
+segment x    t=zero   twoN=one     samples=1
+segment y    t=zero   twoN=one     samples=1
+segment v    t=Tv     twoN=twoNn   samples=1
+segment a    t=Ta     twoN=twoNn   samples=1
+segment d    t=Td     twoN=one     samples=1
+segment y2   t=TmN    twoN=one
+segment n    t=TmN    twoN=twoNn
+segment av   t=Tav    twoN=twoNav
+segment nd   t=Tnd    twoN=twoNnd
+segment xy   t=Txy    twoN=twoNxy
+segment xynd t=Txynd  twoN=twoNxynd
+mix    y from y2 + mN * n
+derive n from v
+derive v from a
+derive a from av
+derive av from nd
+derive d from nd
+derive x from xy
+derive y2 from xy
+derive xy from xynd
+derive nd from xynd

@@ -1,0 +1,62 @@
+################################################
+# bepe: bootstrap estimate of predictive error #
+#                version 2.3.5                 #
+################################################
+#
+# Program was compiled: Dec  7 2021 11:56:16
+# Program was run: Mon Mar 21 09:15:14 2022
+# curr dir: /uufs/chpc.utah.edu/common/home/rogersa-group2/dalmas/legofit/mod_1
+#
+#          bepe        DataFile     LegofitFile
+1.235811296e-06 data_quechua.opf      b2.legofit
+1.172507157e-06       boot0.opf b2boot0.legofit
+ 1.36400589e-06       boot1.opf b2boot1.legofit
+1.152540212e-06      boot10.opf b2boot10.legofit
+1.343158557e-06      boot11.opf b2boot11.legofit
+1.238996021e-06      boot12.opf b2boot12.legofit
+1.177928186e-06      boot13.opf b2boot13.legofit
+ 1.32815701e-06      boot14.opf b2boot14.legofit
+ 1.33510455e-06      boot15.opf b2boot15.legofit
+1.385628699e-06      boot16.opf b2boot16.legofit
+ 1.35951812e-06      boot17.opf b2boot17.legofit
+1.248686963e-06      boot18.opf b2boot18.legofit
+1.189028386e-06      boot19.opf b2boot19.legofit
+1.143296795e-06       boot2.opf b2boot2.legofit
+1.366207542e-06      boot20.opf b2boot20.legofit
+1.354710661e-06      boot21.opf b2boot21.legofit
+1.376804814e-06      boot22.opf b2boot22.legofit
+1.290393486e-06      boot23.opf b2boot23.legofit
+1.213664855e-06      boot24.opf b2boot24.legofit
+1.257219039e-06      boot25.opf b2boot25.legofit
+1.430561033e-06      boot26.opf b2boot26.legofit
+1.146555693e-06      boot27.opf b2boot27.legofit
+1.236906076e-06      boot28.opf b2boot28.legofit
+1.200378055e-06      boot29.opf b2boot29.legofit
+1.286417864e-06       boot3.opf b2boot3.legofit
+1.309727373e-06      boot30.opf b2boot30.legofit
+1.290710216e-06      boot31.opf b2boot31.legofit
+1.237354049e-06      boot32.opf b2boot32.legofit
+1.209863481e-06      boot33.opf b2boot33.legofit
+ 1.26677898e-06      boot34.opf b2boot34.legofit
+1.219524001e-06      boot35.opf b2boot35.legofit
+1.202415009e-06      boot36.opf b2boot36.legofit
+1.268365733e-06      boot37.opf b2boot37.legofit
+ 1.19078109e-06      boot38.opf b2boot38.legofit
+ 1.16980477e-06      boot39.opf b2boot39.legofit
+1.222957889e-06       boot4.opf b2boot4.legofit
+1.354680014e-06      boot40.opf b2boot40.legofit
+1.350823546e-06      boot41.opf b2boot41.legofit
+1.243573338e-06      boot42.opf b2boot42.legofit
+1.204327139e-06      boot43.opf b2boot43.legofit
+1.252881429e-06      boot44.opf b2boot44.legofit
+ 1.25276231e-06      boot45.opf b2boot45.legofit
+1.364044025e-06      boot46.opf b2boot46.legofit
+1.252121334e-06      boot47.opf b2boot47.legofit
+1.338851309e-06      boot48.opf b2boot48.legofit
+1.224663131e-06      boot49.opf b2boot49.legofit
+1.265508175e-06       boot5.opf b2boot5.legofit
+1.194016629e-06       boot6.opf b2boot6.legofit
+ 1.43110876e-06       boot7.opf b2boot7.legofit
+1.191185858e-06       boot8.opf b2boot8.legofit
+1.372110935e-06       boot9.opf b2boot9.legofit
+

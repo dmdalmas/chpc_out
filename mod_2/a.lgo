@@ -1,0 +1,52 @@
+# Gene flow: N->Y
+# XY = early modern; Y = Quechua; N=Neanderthal; D=Denisovan
+# Altai and Vindija on same branch
+# TmN < Tv < Ta
+# Neanderthal population size allowed to change
+time fixed  zero = 0
+time fixed  Txynd = 25920  # \citet[table~S12.2, p.~90]{Li:N-505-43-S88}
+time free   Tnd = 24000
+time free   Tav = 14000
+time free   Txy = 3788     # separation time Africa-Eurasia
+time free   Td  = 2500
+time free   Ta  = 4000
+time free   Tv  = 1000
+time constrained  Tmd = 0.5*(Txy+Td)
+time constrained  Tmv = 0.5*(Tmd+Tv)
+twoN fixed  one = 1
+twoN free   twoNav = 2000
+twoN free   twoNn = 2000
+twoN free   twoNd = 2000
+twoN free   twoNv = 2000
+twoN free   twoNnd = 2000
+twoN free   twoNxy = 20000
+twoN free   twoNxynd = 20000
+param free [0, 2] msum = 0.02
+param free [-1, 1] mdif = 0.0
+mixFrac constrained mV = 0.5*(msum + mdif)
+mixFrac constrained mD = 0.5*(msum - mdif)
+segment x    t=zero   twoN=one     samples=1
+segment y    t=zero   twoN=one     samples=1
+segment v    t=Tv     twoN=twoNv   samples=1
+segment v2   t=Tmv    twoN=twoNv
+segment a    t=Ta     twoN=one     samples=1
+segment d    t=Td     twoN=twoNd   samples=1
+segment d2   t=Tmd    twoN=twoNd
+segment y2   t=Tmv    twoN=one
+segment y3   t=Tmd    twoN=one
+segment av   t=Tav    twoN=twoNav
+segment nd   t=Tnd    twoN=twoNnd
+segment xy   t=Txy    twoN=twoNxy
+segment xynd t=Txynd  twoN=twoNxynd
+mix    y2 from y3 + mD * d2
+mix    y from y2 + mV * v2
+derive v from v2
+derive v2 from av
+derive a from av
+derive av from nd
+derive d from d2
+derive d2 from nd
+derive x from xy
+derive y3 from xy
+derive xy from xynd
+derive nd from xynd

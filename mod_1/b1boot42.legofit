@@ -1,0 +1,114 @@
+########################################
+# legofit: estimate population history #
+#            version 2.3.5             #
+########################################
+#
+# Program was compiled: Dec  7 2021 11:56:14
+# Program was run: Mon Feb 28 21:33:58 2022
+#
+# cmd: legofit -1 -d 0 --tol 3e-6 -S 5000 --stateOut b1boot42.state b.lgo ../boot/boot42.opf
+# curr dir: /uufs/chpc.utah.edu/common/home/rogersa-group2/dalmas/legofit/mod_1
+# Stage nOptItr nSimReps
+#     0    5000        0
+# algorithm          : deterministic
+# ignoring probs <=  : 0
+# Branch length floor: 0
+# DE strategy        : 2
+#    F               : 0.3
+#    CR              : 0.8
+#    tolerance       : 3e-06
+# nthreads           : 16
+# lgo input file     : b.lgo
+# site pat input file: ../boot/boot42.opf
+# free parameters    : 10
+# points in DE swarm : 100
+# output state file  : b1boot42.state
+# Including singleton site patterns.
+# cost function      : KL
+Initial parameter values
+Fixed:
+      zero = 0
+       one = 1
+       TmN = 1
+     Txynd = 25920
+Free:
+       pc1 = 0
+       pc2 = 0
+       pc3 = 0
+       pc4 = 0
+       pc5 = 0
+       pc6 = 0
+       pc7 = 0
+       pc8 = 0
+       pc9 = 0
+      pc10 = 0
+Constrained:
+       Tnd = 25886.4
+       Tav = 11117.7
+       Txy = 8400.73
+        Td = 2900.46
+        Ta = 6064.45
+        Tv = 3306.89
+    twoNav = 18201.2
+     twoNn = 5337.68
+    twoNnd = 89.891
+    twoNxy = 33819.4
+  twoNxynd = 43179.7
+        mN = 0.0247482
+DiffEv reached_goal. cost=4.08127e-04 spread=2.69200e-06
+Fitted parameter values
+Free:
+       pc1 = -2.62154
+       pc2 = 0.158537
+       pc3 = 0.630442
+       pc4 = 0.814419
+       pc5 = 0.193671
+       pc6 = 0.0810852
+       pc7 = 0.199539
+       pc8 = 0.207365
+       pc9 = -0.422952
+      pc10 = -0.10246
+Constrained:
+       Tnd = 25908.9
+       Tav = 10156.2
+       Txy = 8157.17
+        Td = 2929.88
+        Ta = 6033.95
+        Tv = 3355.6
+    twoNav = 16817.3
+     twoNn = 4971.56
+    twoNnd = 30.0043
+    twoNxy = 34382
+  twoNxynd = 43042.4
+        mN = 0.0243248
+#       SitePat  BranchLen
+              x 36452.1071159
+              y 35254.6834684
+              v 11610.1520214
+              a 9041.4526164
+              d 38838.1628276
+            x:y 21758.8267465
+            x:v 276.0303064
+            x:a 284.6120569
+            x:d 2873.6243319
+            y:v 432.0311376
+            y:a 322.3797409
+            y:d 2668.4408699
+            v:a 27031.6656775
+            v:d 1045.3881748
+            a:d 1058.4642530
+          x:y:v 570.9947780
+          x:y:a 562.4130275
+          x:y:d 6183.8161383
+          x:v:a 2618.2688453
+          x:v:d 228.9735744
+          x:a:d 237.5553249
+          y:v:a 3297.6531076
+          y:v:d 245.2303703
+          y:a:d 232.1542920
+          v:a:d 16174.8773593
+        x:y:v:a 6439.1716249
+        x:y:v:d 618.0515100
+        x:y:a:d 609.4697595
+        x:v:a:d 5251.2266701
+        y:v:a:d 5769.8252392
